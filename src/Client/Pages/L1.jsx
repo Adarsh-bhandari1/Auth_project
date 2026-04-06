@@ -11,7 +11,7 @@ function L1() {
   const handleHash = () => {
     const saltRounds = 10;
     bcrypt.hash(password, saltRounds, function(err, hash) {
-      if (err) throw err;
+      if (err) console.log(err);
       console.log(hash);
       setHashedPassword(hash);
     });
