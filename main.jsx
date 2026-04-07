@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./src/Client/Pages/app.jsx";
 import { BrowserRouter } from "react-router-dom";
+import "./src/Client/Css/style.css";
 
 // ReactDOM.createRoot(document.getElementById("root")).render(
 //   <React.StrictMode>
