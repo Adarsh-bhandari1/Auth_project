@@ -8,8 +8,10 @@ function Home() {
 
   return (
     <div>
-      <h1>Auth Project</h1>
-      <button onClick={() => navigate("/level1")}>Level 1</button>
+      <h1 className="h1_style">Auth Project</h1>
+      <div className="container">
+        <button onClick={() => navigate("/level1")}>Level 1</button>
+      </div>
     </div>
   );
 }
@@ -20,7 +22,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/level1" element={<L1 />} />
       {/* <Route path="/Level2" element={<L2/>}/>    not implemented yet */}
-    </Routes>
+    </Routes> 
   );
 }
 
