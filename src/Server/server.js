@@ -45,6 +45,20 @@ app.post("/login", (req, res, next) => {
   })(req, res, next);
 });
 
+// Just to verify the login is successful or not
+
+app.get("/profile", (req, res) => {
+  if (req.isAuthenticated()) {
+    return res.json({
+      message: "User is logged in",
+      user: req.user,
+    });
+  } else {
+    return res.status(401).json({
+      message: "Not logged in",
+    });
+  }
+});
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 })
