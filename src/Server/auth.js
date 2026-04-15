@@ -10,7 +10,7 @@ function passportConfig() {
     passport.use(
         new LocalStrategy(
             (username, password, done) => {
-                if (username === "admin " && password === "123") {
+                if (username === "adarsh" && password === "123") {
                     return done(null, user);
                 }
             }
