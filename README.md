@@ -1,21 +1,21 @@
-# 🔐 Auth Project
+# Auth Project
 
 A full-stack authentication playground built with **React + Vite** on the frontend and **Express + Passport.js** on the backend. It demonstrates multiple authentication strategies — local username/password login and Google OAuth 2.0 — organized across escalating "security levels."
 
 ---
 
-## ✨ Features
+## Features
 
-- 🧑‍💻 **Local Authentication** — Username & password login via Passport.js `LocalStrategy`
-- 🌐 **Google OAuth 2.0** — Sign in with Google using Passport.js `GoogleStrategy`
-- 🔒 **Session Management** — Persistent login sessions via `express-session`
-- ⚛️ **React Frontend** — Multi-page SPA with `react-router-dom` v7
-- 🎨 **Leveled UI** — Three distinct authentication "levels" (L1 → L2 → L3) with a dedicated OAuth callback page
-- 🔄 **CORS Configured** — Seamless communication between the Vite dev server and Express API
+- **Local Authentication** — Username & password login via Passport.js `LocalStrategy`
+- **Google OAuth 2.0** — Sign in with Google using Passport.js `GoogleStrategy`
+- **Session Management** — Persistent login sessions via `express-session`
+- **React Frontend** — Multi-page SPA with `react-router-dom` v7
+- **Leveled UI** — Three distinct authentication "levels" (L1 -> L2 -> L3) with a dedicated OAuth callback page
+- **CORS Configured** — Seamless communication between the Vite dev server and Express API
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 Auth_project/
@@ -42,7 +42,7 @@ Auth_project/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -71,7 +71,7 @@ VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
 VITE_GOOGLE_CLIENT_SECRET=your_google_client_secret_here
 ```
 
-> ⚠️ **Never commit your `.env` file.** It is already listed in `.gitignore`.
+> **Never commit your `.env` file.** It is already listed in `.gitignore`.
 
 In your [Google Cloud Console](https://console.cloud.google.com/), add the following **Authorized redirect URI**:
 
@@ -100,7 +100,7 @@ npm run dev:server
 
 ---
 
-## 🔑 Authentication Flow
+## Authentication Flow
 
 ### Local Login
 1. User submits credentials on the login page (`L1` or `L2`).
@@ -118,7 +118,7 @@ npm run dev:server
 
 ---
 
-## 🛣️ API Endpoints
+## API Endpoints
 
 | Method | Endpoint                  | Description                              |
 |--------|---------------------------|------------------------------------------|
@@ -130,20 +130,20 @@ npm run dev:server
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
-| Layer      | Technology                                  |
-|------------|---------------------------------------------|
-| Frontend   | React 19, Vite 8, React Router DOM v7       |
-| Backend    | Node.js, Express 5                          |
+| Layer      | Technology                                           |
+|------------|------------------------------------------------------|
+| Frontend   | React 19, Vite 8, React Router DOM v7                |
+| Backend    | Node.js, Express 5                                   |
 | Auth       | Passport.js, passport-local, passport-google-oauth20 |
-| Session    | express-session                             |
-| Env Config | dotenv                                      |
-| Dev Tools  | Nodemon, ESLint                             |
+| Session    | express-session                                      |
+| Env Config | dotenv                                               |
+| Dev Tools  | Nodemon, ESLint                                      |
 
 ---
 
-## 📝 Default Local Credentials
+## Default Local Credentials
 
 > These are hardcoded for demonstration purposes only.
 
@@ -154,7 +154,7 @@ npm run dev:server
 
 ---
 
-## 🛡️ Security Notes
+## Security Notes
 
 This project is a **learning/demo** application. Before deploying to production:
 
@@ -166,6 +166,6 @@ This project is a **learning/demo** application. Before deploying to production:
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and available under the [MIT License](LICENSE).
